@@ -4,3 +4,4 @@ export const getPlayerStatsURL = (leagueId, gameId) =>
   `/players/stats/${leagueId}/${gameId}`; //PUT
 export const getPlayerStatsUpdateURL = (leagueId, gameId) =>
   `/players/stats/update/${leagueId}/${gameId}`; //DELETE
+export const deletePlayerURL = (playerId) => `/players/delete/${playerId}`; //DELETE

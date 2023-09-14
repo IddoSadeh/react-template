@@ -5,6 +5,7 @@ import Navbar from "./components/Navigation/Navbar";
 import Footer from "./components/Navigation/Footer";
 import PlayerStats from "./components/Players/PlayerStats";
 import GameStats from "./components/Games/GameStats";
+import DeletePlayerForm from "./components/Players/DeletePlayerForm";
 
 function App() {
   return (

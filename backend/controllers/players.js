@@ -60,4 +60,20 @@ WHERE ${whereClause};
   }
 };
 
-module.exports = {getPlayerStats}
+
+
+
+// Creating the DELETE API endpoint
+const deletePlayer = async (req, res) => {
+  const { playerId } = req.params;
+  try {
+    const deleteQuery = `DELETE FROM PlayerGeneralInfo WHERE ID = $1`;
+    await db.query(deleteQuery, [playerId]);
+    return res.status(200).json({ message: "Player deleted successfully" });
+  } catch (error) {
+    console.log(error.message);
+    return res.status(404).json({ message: "Something went wrong" });
+  }
+};
+
+module.exports = {getPlayerStats, deletePlayer}

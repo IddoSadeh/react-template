@@ -1,8 +1,10 @@
 import React from 'react'
+import DeletePlayerForm from './DeletePlayerForm';
 
 const PlayerStats = () => {
   return (
-    <div>PlayerStats</div>
+    <div><DeletePlayerForm /></div>
+    
   )
 }
 
